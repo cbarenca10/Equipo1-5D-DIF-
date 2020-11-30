@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menucool"
+    tools:context=".trabajosocial_formulariodos">
+    <GridLayout
+        android:id="@+id/Icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casos"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguimiento"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo caso"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/casos"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_table_chart_24"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seguimiento"
+            android:src="@drawable/ic_baseline_how_to_reg_24"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nuevocaso"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_person_add_alt_1_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/salir"
+            android:src="@drawable/ic_baseline_exit_to_app_24"/>
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Icons"
+        android:id="@+id/TopButtonPanel">
+
+        <TextView
+            android:id="@+id/TextUno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudio Socioeconomico"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextUnopuntouno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TopButtonPanel"
+        android:text="id Estudio"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/TextDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextUnopuntouno"
+        android:text="id Consulta"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/TextTres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextDos"
+        android:text="Usuario"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/TextCuatro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextTres"
+        android:text="Beneficiario"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/IngresoMensualCatcher"
+        android:hint="Ingresar Ingreso Mensual"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TextCuatro"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/IncapacidadCatcher"
+        android:hint="Ingresa Incapacidad"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/IngresoMensualCatcher"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EnfermedadCatcher"
+        android:hint="Ingresa Enfermedad"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/IncapacidadCatcher"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TotaldeGastosCatcher"
+        android:hint="Ingresa Total de Gastos"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/EnfermedadCatcher"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ServicioCatcher"
+        android:hint="Ingresar Servicio"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TotaldeGastosCatcher"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ViviendaCatcher"
+        android:hint="Ingresar Tipo de Vivienda"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ServicioCatcher"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ServicioActualCatcher"
+        android:hint="Ingresar Servicio Actual"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ViviendaCatcher"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ApoyoSolicitadoCatcher"
+        android:hint="Ingresar Apoyo Solicitado"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ServicioActualCatcher"></EditText>/>
+</RelativeLayout>

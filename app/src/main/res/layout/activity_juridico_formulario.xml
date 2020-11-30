@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menucool"
+    tools:context=".juridico_formulario">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juridico"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/title"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/procedencia"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="text"
+        android:hint="Procedencia"/>
+
+    <EditText
+        android:id="@+id/observaciones_relevantes"
+        android:layout_below="@+id/procedencia"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginTop="50dp"
+        android:hint="Descripcion general" />
+
+    <EditText
+        android:id="@+id/contacto_alternativo"
+        android:layout_below="@id/observaciones_relevantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Teléfono"/>
+
+    <Spinner
+        android:id="@+id/proceso_actual_iniciado"
+        android:layout_below="@id/contacto_alternativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/descripcion_detallada"
+        android:layout_below="@+id/proceso_actual_iniciado"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:hint="Descripcion general" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripcion_detallada"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="140dp"
+        android:id="@+id/guardar"
+        android:text="Guardar">
+
+    </Button>
+
+</RelativeLayout>

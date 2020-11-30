@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_final"
+    tools:context=".nuevobeneficiario">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Nuevo beneficiario"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/relative"
+            android:layout_below="@id/titulo">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_nombres">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:hint="Nombres"
+                    android:id="@+id/edit_nombres"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_apellido_paterno"
+                android:layout_below="@id/layout_edit_nombres">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:hint="Apellido paterno"
+                    android:id="@+id/edit_apellido_paterno"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_apellido_materno"
+                android:layout_below="@id/layout_edit_apellido_paterno">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:hint="Apellido materno"
+                    android:id="@+id/edit_apellido_materno"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_curp"
+                android:layout_below="@id/layout_edit_apellido_materno">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:hint="CURP"
+                    android:id="@+id/edit_curp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_telefono"
+                android:layout_below="@id/layout_edit_curp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="phone"
+                    android:textStyle="bold"
+                    android:hint="Número telefonico"
+                    android:id="@+id/edit_telefono"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/edit_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_telefono"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_municipio"
+                android:layout_below="@id/edit_estado">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:hint="Municipio"
+                    android:id="@+id/edit_municipio"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_domicilio"
+                android:layout_below="@id/layout_edit_municipio">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:hint="Domicilio"
+                    android:id="@+id/edit_domicilio"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_edit_cp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_domicilio">
+
+                <EditText
+                    android:id="@+id/edit_cp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:hint="C.P." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/edit_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_cp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_fecha_nacimiento"
+                android:layout_below="@id/edit_sexo">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="phone"
+                    android:textStyle="bold"
+                    android:hint="Fecha de nacimiento"
+                    android:id="@+id/edit_fecha_nacimiento"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_sexo"
+                android:layout_toRightOf="@id/layout_edit_fecha_nacimiento"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_baseline_calendar_today_24"
+                android:id="@+id/btn_calendario"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_edit_lugar_nacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_fecha_nacimiento">
+
+                <EditText
+                    android:id="@+id/edit_lugar_nacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:hint="Lugar de Nacimiento" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_fecha_registro"
+                android:layout_below="@id/layout_edit_lugar_nacimiento">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="phone"
+                    android:textStyle="bold"
+                    android:hint="Fecha de registro"
+                    android:id="@+id/edit_fecha_registro"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_lugar_nacimiento"
+                android:layout_toRightOf="@id/layout_edit_fecha_registro"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_baseline_calendar_today_24"
+                android:id="@+id/btn_calendario2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_lugar_nacimiento"
+                android:layout_toRightOf="@id/btn_calendario2"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_access_time_24"
+                android:id="@+id/btn_hora"/>
+
+            <Spinner
+                android:id="@+id/edit_estado_civil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_fecha_registro"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC" />
+
+            <Spinner
+                android:id="@+id/edit_escolaridad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_estado_civil"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_edit_gradoescolar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_escolaridad">
+
+                <EditText
+                    android:id="@+id/edit_gradoescolar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:hint="Grado Escolar" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_edit_escuela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_gradoescolar">
+
+                <EditText
+                    android:id="@+id/edit_escuela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:hint="Nombre de Escuela" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_edit_ocupacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_edit_escuela">
+
+                <EditText
+                    android:id="@+id/edit_ocupacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:hint="Ocupacion" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_edit_ocupacion"
+                android:layout_marginTop="0dp"
+                android:visibility="gone"></ProgressBar>
+
+            <Button
+                android:id="@+id/btn_registroB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/layout_edit_ocupacion"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Registrar" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

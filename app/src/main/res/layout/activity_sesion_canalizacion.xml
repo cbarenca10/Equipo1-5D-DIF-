@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menucool"
+    tools:context=".sesion_canalizacion">
+    <GridLayout
+        android:id="@+id/Icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casos"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguimiento"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo caso"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/casos"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_table_chart_24"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seguimiento"
+            android:src="@drawable/ic_baseline_how_to_reg_24"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nuevocaso"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_person_add_alt_1_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/salir"
+            android:src="@drawable/ic_baseline_exit_to_app_24"/>
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No.de caso"
+        android:layout_below="@id/Icons"
+        android:id="@+id/txtNcaso"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:id="@+id/txtfecha"
+        android:layout_below="@+id/txtNcaso"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/txtNcaso"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtfecha"
+        android:layout_marginTop="40dp"
+        android:text="Hora: "
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtHora"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHora"
+        android:layout_marginTop="40dp"
+        android:text="Nombre: "
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtNombre"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNombre"
+        android:layout_marginTop="40dp"
+        android:text="Apellido Paterno: "
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtAp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAp"
+        android:layout_marginTop="40dp"
+        android:text="Apellido Materno: "
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtAm"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAm"
+        android:layout_marginTop="40dp"
+        android:text="CURP: "
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtcurp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcurp"
+        android:layout_marginTop="40dp"
+        android:text="Notas de sesión: "
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtnotas"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizado"
+        android:layout_below="@id/txtnotas"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/btnfinalizado"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@id/txtnotas"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:id="@+id/btnGuardar"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canalizar"
+        android:textColor="@color/white"
+        android:layout_below="@id/txtnotas"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/btnCanalizar"/>
+</RelativeLayout>

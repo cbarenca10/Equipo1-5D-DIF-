@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Registro">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Usuario"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_nombre">
+                <EditText
+                    android:id="@+id/edit_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:hint=" Nombre" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/layout_edit_apellido_p"
+                android:layout_below="@id/layout_edit_nombre">
+                <EditText
+                    android:id="@+id/edit_apellido_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:hint="Apellido paterno" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_apellido_m"
+                android:layout_below="@id/layout_edit_apellido_p">
+                <EditText
+                    android:id="@+id/edit_apellido_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_below="@id/edit_apellido_p"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:hint="Apellido paterno" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_email"
+                android:layout_below="@id/layout_edit_apellido_m">
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_below="@id/edit_apellido_m"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:hint="  Email" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_pass"
+                android:layout_below="@id/layout_edit_email"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:id="@+id/edit_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_email"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:hint="  Contraseña" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/rolCatcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@id/layout_edit_pass"
+                android:layout_marginTop="10dp"
+                android:textColor="#CCCCCC"></Spinner>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/registrodom"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registro"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="0dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_edit_direccion">
+                <EditText
+                    android:id="@+id/edit_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:hint="Domicilio: Calle y número" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/uno"
+                android:layout_below="@+id/layout_edit_direccion">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layout_edit_municipio">
+                    <EditText
+                        android:id="@+id/edit_municipio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/edit_direccion"
+                        android:hint="Municipio"
+                        android:layout_weight="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/edit_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_below="@id/layout_edit_municipio"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#CCCCCC" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dos"
+                android:orientation="vertical"
+                android:layout_below="@+id/uno">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layout_edit_cp">
+                    <EditText
+                        android:id="@+id/edit_cp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:hint="C.P."
+                        android:layout_weight="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layout_edit_tel">
+                    <EditText
+                        android:id="@+id/edit_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:hint="Teléfono"
+                        android:layout_weight="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/edit_profesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dos"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layout_edit_cedulaprof">
+                <EditText
+                    android:id="@+id/edit_cedulaprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/edit_profesion"
+                    android:hint="Cedula Profesional (Obligatoria si existe)"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registrodom"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="Registrar" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/btn_registro"
+            android:layout_marginTop="0dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_registro"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:text="...o inicia sesión"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="240dp"
+            android:textSize="20dp"
+            android:id="@+id/login"/>
+
+    </RelativeLayout>
+
+</ScrollView>

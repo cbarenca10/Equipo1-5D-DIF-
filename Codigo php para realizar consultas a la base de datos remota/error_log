@@ -1,0 +1,24 @@
+[28-Nov-2020 21:35:26 UTC] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'chilaqu3_cap_root'@'localhost' to database 'chilaqu3_Cap' in /home/chilaqu3/public_html/conexion_jenni/conexion.php on line 8
+[28-Nov-2020 21:35:26 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'chilaqu3_cap_root'@'localhost' to database 'chilaqu3_Cap' in /home/chilaqu3/public_html/conexion_jenni/conexion.php on line 10
+[28-Nov-2020 21:37:43 UTC] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'chilaqu3_cap_root'@'localhost' to database 'chilaqu3_Cap' in /home/chilaqu3/public_html/conexion_jenni/conexion.php on line 8
+[28-Nov-2020 21:37:43 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'chilaqu3_cap_root'@'localhost' to database 'chilaqu3_Cap' in /home/chilaqu3/public_html/conexion_jenni/conexion.php on line 10
+[28-Nov-2020 21:37:44 UTC] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'chilaqu3_cap_root'@'localhost' to database 'chilaqu3_Cap' in /home/chilaqu3/public_html/conexion_jenni/conexion.php on line 8
+[28-Nov-2020 21:37:44 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'chilaqu3_cap_root'@'localhost' to database 'chilaqu3_Cap' in /home/chilaqu3/public_html/conexion_jenni/conexion.php on line 10
+[28-Nov-2020 21:38:09 UTC] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'chilaqu3_cap_root'@'localhost' to database 'chilaqu3_Cap' in /home/chilaqu3/public_html/conexion_jenni/conexion.php on line 8
+[28-Nov-2020 21:38:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'chilaqu3_cap_root'@'localhost' to database 'chilaqu3_Cap' in /home/chilaqu3/public_html/conexion_jenni/conexion.php on line 10
+[30-Nov-2020 05:29:42 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/chilaqu3/public_html/conexion_jenni/register_nuevocaso.php on line 15
+[30-Nov-2020 05:33:31 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/chilaqu3/public_html/conexion_jenni/register_nuevocaso.php on line 15
+[30-Nov-2020 05:33:47 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/chilaqu3/public_html/conexion_jenni/register_nuevocaso.php on line 15
+[30-Nov-2020 05:42:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/chilaqu3/public_html/conexion_jenni/register_nuevocaso.php on line 15
+[30-Nov-2020 05:43:29 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/chilaqu3/public_html/conexion_jenni/register_nuevocaso.php on line 15
+[30-Nov-2020 05:43:35 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/chilaqu3/public_html/conexion_jenni/register_nuevocaso.php on line 15
+[30-Nov-2020 05:46:55 UTC] PHP Parse error:  syntax error, unexpected ''conexion.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/chilaqu3/public_html/conexion_jenni/nuevocaso.php on line 3
+[30-Nov-2020 05:47:05 UTC] PHP Parse error:  syntax error, unexpected ''conexion.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/chilaqu3/public_html/conexion_jenni/nuevocaso.php on line 3
+[30-Nov-2020 05:47:40 UTC] PHP Parse error:  syntax error, unexpected ''conexion.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/chilaqu3/public_html/conexion_jenni/nuevocaso.php on line 3
+[30-Nov-2020 05:47:42 UTC] PHP Parse error:  syntax error, unexpected ''conexion.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/chilaqu3/public_html/conexion_jenni/nuevocaso.php on line 3
+[30-Nov-2020 05:47:45 UTC] PHP Parse error:  syntax error, unexpected ''conexion.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/chilaqu3/public_html/conexion_jenni/nuevocaso.php on line 3
+[30-Nov-2020 09:29:26 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/chilaqu3/public_html/conexion_jenni/formulario_juridico.php on line 16
+[30-Nov-2020 09:29:33 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/chilaqu3/public_html/conexion_jenni/formulario_juridico.php on line 16
+[30-Nov-2020 09:29:35 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/chilaqu3/public_html/conexion_jenni/formulario_juridico.php on line 16
+[30-Nov-2020 09:29:45 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/chilaqu3/public_html/conexion_jenni/formulario_juridico.php on line 16
+[30-Nov-2020 09:30:10 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/chilaqu3/public_html/conexion_jenni/formulario_juridico.php on line 16

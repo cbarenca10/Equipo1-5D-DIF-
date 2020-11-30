@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menucool"
+    tools:context=".psiquiatria_formulario">
+    <GridLayout
+        android:id="@+id/Icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casos"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguimiento"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo caso"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/casos"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_table_chart_24"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seguimiento"
+            android:src="@drawable/ic_baseline_how_to_reg_24"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nuevocaso"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_person_add_alt_1_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/salir"
+            android:src="@drawable/ic_baseline_exit_to_app_24"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/Icons"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Psiquiatria"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/primeratabla"
+        android:layout_below="@id/textView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp">
+
+            <EditText
+                android:id="@+id/et_mostrar_fecha_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="@string/formato_fecha" />
+
+            <Button
+                android:id="@+id/ib_obtener_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_mostrar_fecha_picker"
+                android:text="Fecha"
+                android:textColor="@color/white"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tabla2"
+        android:layout_below="@+id/primeratabla">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/primeratabla">
+
+            <EditText
+                android:id="@+id/et_mostrar_hora_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/formato_hora"
+                android:inputType="time"
+                android:ems="10"/>
+
+            <Button
+                android:id="@+id/ib_obtener_hora"
+                android:layout_below="@id/et_mostrar_hora_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora"
+                android:textColor="@color/white"/>
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/motivovisita"
+        android:layout_below="@id/tabla2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Motivo de la visita"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Tipoderegistro"
+        android:layout_below="@id/motivovisita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Tipo de registro"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/notses"
+        android:layout_below="@id/Tipoderegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Notas de la sesion"
+        android:inputType="text" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tabla3"
+        android:layout_below="@+id/notses">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp">
+            <TextView
+                android:id="@+id/textpsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Psicologo"
+                android:ems="5"/>
+
+            <Spinner
+                android:id="@+id/psicologo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:ems="10"
+                android:hint="Psicologo" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tabla4"
+        android:layout_below="@+id/tabla3">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp">
+            <TextView
+                android:id="@+id/estadoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Estado"/>
+
+            <Spinner
+                android:id="@+id/estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psicologo"
+                android:layout_marginLeft="15dp"
+                android:ems="10"
+                android:hint="Psicologo" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tabla5"
+        android:layout_below="@+id/tabla4">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp">
+            <TextView
+                android:id="@+id/textestado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Estado" />
+
+            <Spinner
+                android:id="@+id/consentimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/estado"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:hint="Consentimiento" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabla5"
+        android:layout_marginLeft="130dp"
+        android:textColor="@color/white"
+        android:text="Guardar"/>
+</RelativeLayout>

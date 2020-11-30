@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menucool"
+    tools:context=".trabajosocial_formulario3">
+    <GridLayout
+        android:id="@+id/Icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casos"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguimiento"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo caso"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/casos"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_table_chart_24"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seguimiento"
+            android:src="@drawable/ic_baseline_how_to_reg_24"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nuevocaso"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_person_add_alt_1_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/salir"
+            android:src="@drawable/ic_baseline_exit_to_app_24"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TopButtonPanel">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uno"
+            android:layout_weight="9"
+            android:text="1"
+            ></Button>
+        <TextView
+            android:id="@+id/TextUno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudio Socioeconomico"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextUnopuntouno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TopButtonPanel"
+        android:text="id Estudio"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/TextDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextUnopuntouno"
+        android:text="id Consulta"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/TextTres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextDos"
+        android:text="Usuario"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:id="@+id/TextCuatro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextTres"
+        android:text="Beneficiario"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"></TextView>
+
+    <EditText
+        android:id="@+id/DiagnosticoCatcher"
+        android:layout_width="401dp"
+        android:layout_height="152dp"
+        android:layout_below="@id/TextCuatro"
+        android:layout_marginTop="35dp"
+        android:hint="Ingresar Diagnostico"></EditText>
+
+    <EditText
+        android:id="@+id/ObservacionesCatcher"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@id/DiagnosticoCatcher"
+        android:layout_marginTop="10dp"
+        android:hint="Ingresa Observaciones"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EstadoCatcher"
+        android:hint="Ingresa el Estado"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ObservacionesCatcher"></EditText>/>
+</RelativeLayout>
